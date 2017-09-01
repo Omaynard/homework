@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+</head>
+<body>
+	<h1>Index</h1>
+	<h2>We have these videos</h2>
+
+	<ul>
+		<% @videos.each do |videos|%>
+		<div>
+			<h3><%= videos[:name]%></h3>
+			<p><%= videos [:description]%></p>
+		</div>
+		<% end %>
+	</ul>
+
+</body>
+</html>
